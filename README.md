@@ -2,9 +2,9 @@
 
 ## Description
 
-My client Fruity Marketing Agency wants a codebase that follows accesibility standards so that their own site is optimized for search engines.
+My client Fruity Marketing Agency wants a codebase that follows accesibility standards so that their own site is optimized for search engines. They presented me a source code that contained a lot of extra CSS selectors and properties that were the same and the some HTML elements were not named properly. The HTML elements were also not as organized as it could be with random extra spacing. The CSS selsctors and properties were not formatted in the order that followed the flow in HTML. One of the links in the header did not work.
 
-I viewed the original webpage code and made the following changes:
+After inspecting the original webpage code, I made the following changes:
 
     -Reformatted HTML to have better structure of HTML elements
     -Changed some HTML elements to <header> and <section> elements for better accesibilty
