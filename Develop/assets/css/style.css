@@ -19,10 +19,7 @@ header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
-header h1 .seo {
-    color: #d9dcd6;
-}
+/*Removed class header seo since it added no extra effect.*/
 
 header nav {
     padding-top: 15px;
@@ -51,7 +48,7 @@ p {
 }
 
 .hero {
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
@@ -74,11 +71,28 @@ p {
 }
 /* Added max-height image and removed .online-reputaion-management img. */
 
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* Consolidated .social-media-marketing h2, .online-reputation-management h2, and .search-engine-optimizing h2 into one h2 class. */
+/* Moved h2 up in CSS line to match html order. */
+
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 20px; 
 }
+
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* Consolidated .search-engine-optimization, .online-reputaion-management, .social-media-marketing into one CSS rule since they have the same rules. */
 
 .benefits {
     margin-right: 20px;
@@ -91,78 +105,23 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+/* Consolidated .benefit-lead, .benefit-brand, and .benefit-cost into one CSS rule since they have the same rules.*/
 h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 /* Consolidated .benefit-lead h3, .benefit-brand h3, and .benefit-cost h3 into one h3. */
 
-.benefit-lead img {
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-/* Consolidated .social-media-marketing h2, .online-reputation-management h2, and .search-engine-optimizing h2 into one h2 class. */
-
+/* Consolidated .benefit-lead img, .benefit-brand img, .benefit-cost img into one CSS rule since they have the same rules.*/
 footer {
     padding: 30px;
     clear: both;
